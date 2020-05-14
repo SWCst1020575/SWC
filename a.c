@@ -63,7 +63,6 @@ void per(int a[],int n,int now,int r){
         
         for(int i=0;i<n-now;i++){
             swap(a,now,now+i);
-            int s=0;
             per(a,n,now+1,r);
             swap(a,now,now+i);
         }
