@@ -64,14 +64,6 @@ void per(int a[],int n,int now,int r){
         for(int i=0;i<n-now;i++){
             swap(a,now,now+i);
             int s=0;
-            /*for(int i=0;i<r-1;i++){
-                if(a[i]==1)
-                    s=1;
-            }
-            if(s==1){
-                swap(a,now,now+i);
-                continue;
-            }*/
             per(a,n,now+1,r);
             swap(a,now,now+i);
         }
