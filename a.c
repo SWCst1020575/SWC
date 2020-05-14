@@ -78,6 +78,9 @@ int main(){
         if(n>1)
             per(a,n,0,r);
     }
+    if(n==1){
+        sum=1;
+    }
     for(int i=1;i<=n;i++)
         b*=i;
     float ans = (float)sum/(float)b;
