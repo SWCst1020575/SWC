@@ -17,7 +17,7 @@ int main(){
 			scanf("%d",&a[i]);
 		}
 		
-		int max_sum=0;
+		int max_sum=a[0];
 		int sum=0;
 		for(int i=0;i<n;i++){
 			sum+=a[i];
